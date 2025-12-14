@@ -1,0 +1,409 @@
+🟩 ECOSPARK – Full Webdesign & Frontend Specification
+
+Natural Minimalism • Clean E-Commerce • Modern Eco Lifestyle Look
+Inspired by your GARMFILES structure — but 100% Eco-focused.
+
+1️⃣ BRAND & DESIGN SYSTEM
+🎨 Farben
+
+Primärfarben (hell, clean, natural):
+
+Deep Forest #1D3925 → Header, Footer, CTA, Primary Typography
+
+Off-White #F8F7F3 → Background, Cards, Sections
+
+Graphit #373737 → Text, Headlines
+
+Gray-Low #D9D9D9 → Lines, Dividers
+
+Gray-Mid #B4B4B4 → Secondary Text
+
+Akzentfarbe (einheitlicher Eco-Ton):
+
+Wähle eine der folgenden als Haupt-Brand-Akzentfarbe:
+
+Leaf Green #94C973 (freundlich, fresh)
+
+Olive Natural #7D9A58 (erdig, modern)
+
+Soft Mint #CDECC5 (minimalistisch, clean)
+
+Akzentfarbe wird genutzt für:
+
+CTA Buttons
+
+Hover-States
+
+Link Underlines
+
+Icons
+
+Kategorie-Labels
+
+Produkt-Badges (z. B. „🌱 Eco Certified“)
+
+2️⃣ TYPOGRAFIE
+📌 Fonts
+
+Montserrat (700–900) → Headlines
+
+Inter (300–500) → Body, UI
+
+Space Grotesk (500) → Labels, Product Tags
+
+📐 Regeln
+
+H1: Montserrat 900, uppercase, tracking +2%
+
+H2: Montserrat 700
+
+Body: Inter 400, line-height 1.5
+
+Labels: Space Grotesk, uppercase, accent-green
+
+✨ Eco Feeling durch Typografie
+
+leichte Letter-Spacing-Erhöhung bei Headlines
+
+sanfter, luftiger Weißraum
+
+naturinspirierte Farbwerte (Grünakzente, Off-White Hintergründe)
+
+Labels minimal & geometrisch
+
+3️⃣ DESIGN STYLE (vereint)
+Grundstil:
+
+Minimalistisch
+
+Sanft-naturalistische UI
+
+Modernes Grid System
+
+Eco Premium Aesthetic
+
+ruhige Erdfarben, natürliche Texturen
+
+Ästhetik:
+
+klare Kanten
+
+dünne 1px Linien (Gray-Low)
+
+viel Off-White Weißraum
+
+dunkle Serif-/Brutalist-Kontraste durch Montserrat
+
+Akzent-Grün als natürlicher Farbtupfer
+
+Natur-Elemente (subtil!):
+
+leichte Papier-/Faserstruktur (1–2%)
+
+warme natürliche Tonung bei Produktbildern
+
+leichte Körnung (1–2%)
+
+organische Abgerundungen (4–8px)
+
+Analoger Naturvibe, aber moderne Premium-UI.
+
+4️⃣ PAGE LAYOUT (DESKTOP)
+🧱 HEADER
+
+Hintergrund: Deep Forest (#1D3925)
+
+Logo: Montserrat Bold, weiß
+
+Navigation: Weiß, Hover → underline in Accent-Green
+
+Icons (Search, Cart, Wishlist): Weiß, Hover → Accent-Green
+
+Sticky on scroll
+
+🔍 SEARCH SYSTEM
+
+Option A → Inline Searchbar
+Option B → Fullscreen-Overlay (wie moderne Eco-Shops)
+
+Cursorfarbe: Accent-Green
+
+Focus Outline: Accent-Green
+
+Background: Off-White (#F8F7F3)
+
+Icons in Graphit
+
+Sanfte Eco-Illustration im Hintergrund möglich
+
+🪴 HERO SECTION (LEFT 60%)
+
+Struktur bleibt wie beim Beispiel — nur Naturlook.
+
+Hintergrundoptionen:
+
+Flatlay aus Bambusprodukten / Naturmaterialien mit Grain
+
+Off-White Canvas mit zartem Papiertextureffekt
+
+Editorial Naturfoto mit Green Overlay
+
+Neue Eco Headlines:
+
+SUSTAINABLE LIVING, SIMPLIFIED
+
+ECO ESSENTIALS FOR EVERYDAY LIFE
+
+CONSCIOUS GOODS FOR A BETTER TOMORROW
+
+NATURAL DESIGN. MINIMAL IMPACT.
+
+CTA Button:
+
+Background: Deep Forest (#1D3925)
+
+Border: 1px Accent-Green
+
+Text: Weiß → Hover: Accent-Green
+
+Soft shadow (eco glow)
+
+📦 RIGHT COLUMN (40%) — CARD GRID
+
+Konzept bleibt gleich — nur eco-orientiert.
+
+🟩 Card 1 – Shop Sustainably
+
+Title: “Shop Sustainably”
+Subtitle: “Explore our eco-friendly essentials”
+CTA: „VIEW PRODUCTS →“ (Accent-Green)
+
+🟩 Card 2 – New Eco Drops
+
+Subtitle: “Fresh sustainable finds added weekly”
+Icon: leaf-outline icon (Accent-Green)
+
+🟩 Card 3 – Our Mission
+
+Subtitle: “Learn about our eco commitment”
+Mini Icon: earth / recycling symbol
+
+Styling für alle Cards:
+
+Off-White background
+
+1px Gray-Low border
+
+subtle grain texture
+
+soft green hover outline
+
+5️⃣ MAIN PRODUCT GRID
+Layout:
+
+3–4 Spalten (Desktop)
+
+quadratische Thumbnails
+
+Styling:
+
+Hover border → Accent-Green
+
+Light shadow (eco soft)
+
+Labels: „Zero Waste“, „Recycled“, „Bamboo“, „Solar“
+
+Space Grotesk in Accent-Green
+
+Produktbilder: leichte Wärme + Naturgrain
+
+6️⃣ CATEGORY SECTION
+
+Grid von 4–6 Kacheln
+
+Schwarz/Weiß oder warm-toned Fotos
+
+grüne Label-Tags
+
+1px Rahmen
+
+organische Icons (Blatt, Erde, Wasser, Sonne)
+
+Beispiele:
+
+Zero Waste Essentials
+
+Eco Gadgets
+
+Natural Home
+
+Grow & Green
+
+Upcycled Goods
+
+7️⃣ LOOKBOOK / EDITORIAL SECTION
+
+Magazinartiges Layout.
+
+große Bilder in Off-White + Naturton
+
+sanfter Grain
+
+Highlight Typografie in Accent-Green
+
+Mischung aus Editorial- und Flatlay-Fotografie
+
+Wie ein „Eco Lifestyle Magazine“.
+
+8️⃣ FOOTER
+
+Hintergrund: Deep Forest (#1D3925)
+
+Text: Weiß
+
+Hover: Accent-Green
+
+Links:
+About
+Sustainability
+Contact
+FAQ
+Shipping
+Returns
+Privacy
+Terms
+
+Optional: Mini EcoSpark Mission Statement.
+
+9️⃣ MOBILE DESIGN
+
+Burger Menu
+
+Fullscreen Search
+
+2-column product grid
+
+Stacked sections (Hero → Cards → Categories → Products)
+
+Full-width CTAs
+
+Icons größer & organischer
+
+Sticky Add-to-Cart
+
+🔟 REQUIRED PAGES (FULL FRONTEND)
+
+Homepage
+
+Product Page
+
+Category Page
+
+Sustainability Page
+
+Search Results
+
+Cart Page
+
+Mini Cart Drawer
+
+Checkout UI
+
+Login/Register
+
+Wishlist
+
+About
+
+Contact
+
+FAQ
+
+Shipping & Returns
+
+Legal Pages
+
+Newsletter Pop-up
+
+Cookie Banner (GDPR)
+
+404 Page
+
+1️⃣1️⃣ E-COMMERCE LOGIC
+✔ Produktdaten:
+
+title
+
+material
+
+sustainability-tag
+
+price
+
+weight/size
+
+product benefits
+
+photos
+
+certifications (if any)
+
+✔ Filtering:
+
+Material (bamboo, recycled, metal, glass)
+
+Category
+
+Price
+
+Sustainability Level
+
+Color
+
+✔ Sorting:
+
+newest
+
+eco-rating
+
+price low/high
+
+popularity
+
+✔ Inventory:
+
+Multi-supplier capable
+
+Status: in stock / low stock / made to order
+
+Sold out → auto-hide or notify
+
+✔ Wishlist:
+
+localStorage oder Account
+Eco-tags sichtbar
+
+✔ Back-in-Stock:
+
+notification system with green accent highlight
+
+✔ Cart System:
+
+mini-cart drawer + full page
+eco-friendly shipping message
+
+1️⃣2️⃣ AUTOMATIONS
+
+Auto-hide unavailable eco-products
+
+Auto-highlight new eco-arrivals
+
+Sustainability badges based on supplier tags
+
+Review widget
+
+Newsletter signup (eco-themed)
+
+Back-in-stock logic
+
+„You may also like“ mit Eco-Synergien

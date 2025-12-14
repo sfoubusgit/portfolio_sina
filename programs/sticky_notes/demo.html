@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Notes - Demo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            min-height: 100vh;
+            padding: 2rem;
+            color: #333;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            padding: 3rem;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+        h1 {
+            color: #f5576c;
+            margin-bottom: 1rem;
+            font-size: 2.5rem;
+        }
+        .subtitle {
+            color: #666;
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+        }
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        .feature-card {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 12px;
+            border-left: 4px solid #f5576c;
+        }
+        .feature-card h3 {
+            color: #f5576c;
+            margin-bottom: 0.5rem;
+        }
+        .feature-card p {
+            color: #666;
+            line-height: 1.6;
+        }
+        .info-box {
+            background: #ffeef1;
+            border-left: 4px solid #f5576c;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+        }
+        .info-box h3 {
+            color: #c2185b;
+            margin-bottom: 0.5rem;
+        }
+        .color-swatches {
+            display: flex;
+            gap: 1rem;
+            margin: 1rem 0;
+            flex-wrap: wrap;
+        }
+        .color-swatch {
+            width: 60px;
+            height: 60px;
+            border-radius: 8px;
+            border: 2px solid #ddd;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .color-swatch.yellow { background: #ffeb3b; }
+        .color-swatch.white { background: #ffffff; }
+        .color-swatch.blue { background: #2196f3; }
+        .color-swatch.green { background: #4caf50; }
+        .color-swatch.pink { background: #e91e63; }
+        ul {
+            margin-left: 1.5rem;
+            line-height: 1.8;
+        }
+        ul li {
+            margin-bottom: 0.5rem;
+        }
+        .btn {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: #f5576c;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            margin-top: 2rem;
+            font-weight: 600;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(245, 87, 108, 0.4);
+        }
+        .code-block {
+            background: #1e1e1e;
+            color: #d4d4d4;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+            font-family: 'Courier New', monospace;
+            overflow-x: auto;
+        }
+        .code-block code {
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📝 Sticky Notes</h1>
+        <p class="subtitle">A desktop application for creating and managing sticky notes on your computer</p>
+
+        <div class="info-box">
+            <h3>📋 About This Project</h3>
+            <p>Sticky Notes is a cross-platform desktop application built with Electron. It allows you to create unlimited sticky notes on your desktop with features like color customization, drag-and-drop positioning, auto-save, and system tray integration.</p>
+        </div>
+
+        <h2 style="color: #f5576c; margin-top: 2rem;">✨ Key Features</h2>
+        <div class="feature-grid">
+            <div class="feature-card">
+                <h3>📝 Unlimited Notes</h3>
+                <p>Create as many sticky notes as you need for organizing your tasks and reminders.</p>
+            </div>
+            <div class="feature-card">
+                <h3>🎨 Color Options</h3>
+                <p>Choose from 5 different colors: yellow, white, blue, green, and pink.</p>
+            </div>
+            <div class="feature-card">
+                <h3>🖱️ Drag & Drop</h3>
+                <p>Move notes anywhere on your desktop by dragging the note header.</p>
+            </div>
+            <div class="feature-card">
+                <h3>💾 Auto-Save</h3>
+                <p>Automatic saving of note content, position, and size when you make changes.</p>
+            </div>
+            <div class="feature-card">
+                <h3>⌨️ Keyboard Shortcuts</h3>
+                <p>Global shortcut (Ctrl+Shift+N) to quickly create new notes from anywhere.</p>
+            </div>
+            <div class="feature-card">
+                <h3>📌 System Tray</h3>
+                <p>Runs in the system tray for easy access and background operation.</p>
+            </div>
+        </div>
+
+        <h2 style="color: #f5576c; margin-top: 2rem;">🎨 Available Colors</h2>
+        <div class="color-swatches">
+            <div class="color-swatch yellow" title="Yellow"></div>
+            <div class="color-swatch white" title="White"></div>
+            <div class="color-swatch blue" title="Blue"></div>
+            <div class="color-swatch green" title="Green"></div>
+            <div class="color-swatch pink" title="Pink"></div>
+        </div>
+
+        <h2 style="color: #f5576c; margin-top: 2rem;">🛠️ Tech Stack</h2>
+        <ul>
+            <li><strong>Electron</strong> - Cross-platform desktop application framework</li>
+            <li><strong>JavaScript</strong> - Core programming language</li>
+            <li><strong>HTML/CSS</strong> - User interface and styling</li>
+        </ul>
+
+        <h2 style="color: #f5576c; margin-top: 2rem;">📝 How to Use</h2>
+        <ul>
+            <li><strong>Create a new note:</strong> Click the system tray icon or press <code>Ctrl+Shift+N</code> (or <code>Cmd+Shift+N</code> on Mac)</li>
+            <li><strong>Move a note:</strong> Click and drag the note header</li>
+            <li><strong>Edit content:</strong> Click inside the note and start typing</li>
+            <li><strong>Change color:</strong> Click the color button in the note header</li>
+            <li><strong>Delete note:</strong> Click the × button in the note header</li>
+        </ul>
+
+        <h2 style="color: #f5576c; margin-top: 2rem;">🚀 Installation</h2>
+        <div class="code-block">
+            <code>
+# Install dependencies<br>
+npm install<br><br>
+# Run the application<br>
+npm start
+            </code>
+        </div>
+
+        <h2 style="color: #f5576c; margin-top: 2rem;">💡 Technical Details</h2>
+        <ul>
+            <li>Each note is a separate Electron window for true desktop placement</li>
+            <li>Data is stored in: <code>%APPDATA%/sticky-notes/notes-data.json</code> (Windows)</li>
+            <li>All notes are restored when you restart the application</li>
+            <li>The application runs in the system tray - close all windows to keep it running in the background</li>
+        </ul>
+
+        <a href="v1" class="btn" target="_blank">View Project</a>
+    </div>
+</body>
+</html>
+
+

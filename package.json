@@ -1,0 +1,19 @@
+{
+  "name": "portfolio-v2",
+  "version": "1.0.0",
+  "description": "Portfolio website by Sina Foudehi",
+  "scripts": {
+    "dev": "live-server --port=3000 --open=/index.html",
+    "start": "live-server --port=3000 --open=/index.html"
+  },
+  "keywords": [
+    "portfolio",
+    "website"
+  ],
+  "author": "Sina Foudehi",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}
+

@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Amir-Sina Foudehi - Web Developer & Tool Builder">
+    <title>Amir-Sina Foudehi | Web Developer & Tool Builder</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <header class="header" id="header">
+        <nav class="nav-container">
+            <a href="#hero" class="logo" aria-label="Home">
+                <span class="logo-text">SF</span>
+            </a>
+            
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#hero" class="nav-link" data-i18n="nav.home">Home</a></li>
+                <li><a href="#projects" class="nav-link" data-i18n="nav.projects">Projects</a></li>
+                <li><a href="#skills" class="nav-link" data-i18n="nav.skills">Skills</a></li>
+                <li><a href="#about" class="nav-link" data-i18n="nav.about">About</a></li>
+                <li><a href="#contact" class="nav-link" data-i18n="nav.contact">Contact</a></li>
+            </ul>
+            
+            <button class="lang-toggle" id="langToggle" aria-label="Toggle language">
+                <span id="langText">EN</span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="page">
+        <!-- Hero Section -->
+        <section id="hero" class="card section reveal">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <p class="hero-overline" data-i18n="hero.overline">> WEB DEVELOPER & TOOL BUILDER</p>
+                    <h1 data-i18n="hero.title">Hi, I'm Sina Foudehi.</h1>
+                    <p class="hero-subtitle" data-i18n="hero.subtitle">
+                        I build structured web interfaces and small tools using HTML, CSS, JavaScript and Python.
+                    </p>
+                    <ul class="hero-strengths">
+                        <li data-i18n="hero.strength1">Focus on clear, functional UI</li>
+                        <li data-i18n="hero.strength2">Experience with responsive layouts & vanilla JS</li>
+                        <li data-i18n="hero.strength3">Python tools for image processing & automation</li>
+                    </ul>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="button button-primary" data-i18n="hero.buttonProjects">View Projects</a>
+                        <a href="#contact" class="button button-secondary" data-i18n="hero.buttonContact">Get in Touch</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="code-block">
+                        <div class="code-line"><span class="code-keyword">const</span> <span class="code-variable">developer</span> = {</div>
+                        <div class="code-line">  <span class="code-property">name</span>: <span class="code-string">'Sina Foudehi'</span>,</div>
+                        <div class="code-line">  <span class="code-property">role</span>: <span class="code-string">'Web Developer'</span>,</div>
+                        <div class="code-line">  <span class="code-property">stack</span>: [</div>
+                        <div class="code-line">    <span class="code-string">'HTML'</span>,</div>
+                        <div class="code-line">    <span class="code-string">'CSS'</span>,</div>
+                        <div class="code-line">    <span class="code-string">'JavaScript'</span>,</div>
+                        <div class="code-line">    <span class="code-string">'Python'</span></div>
+                        <div class="code-line">  ]</div>
+                        <div class="code-line">};</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="card section reveal">
+            <h2 data-i18n="projects.title">Projects</h2>
+            <p class="section-subtitle" data-i18n="projects.subtitle">A selection of things I've built.</p>
+            
+            <div class="projects-grid">
+                <!-- Project 1: Portfolio Website -->
+                <article class="project-card">
+                    <div class="project-thumbnail">
+                        <div class="thumbnail-placeholder">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="3" width="18" height="18" rx="2"/>
+                                <path d="M3 9h18M9 21V9"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 data-i18n="projects.portfolio.title">Portfolio Website</h3>
+                    <p class="project-description" data-i18n="projects.portfolio.description">
+                        A minimalist, responsive portfolio showcasing my work with a clean grid-based layout. 
+                        Built with vanilla JavaScript for smooth scrolling, intersection observer animations, 
+                        and a fully responsive design that works seamlessly across all devices. Features a 
+                        dark theme with modern card-based sections and smooth reveal animations.
+                    </p>
+                    <div class="tech-badges">
+                        <span class="tech-badge">HTML</span>
+                        <span class="tech-badge">CSS</span>
+                        <span class="tech-badge">JS</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="index.html" class="project-link project-link-primary" data-i18n="projects.liveDemo">Live Demo</a>
+                        <a href="https://github.com/sfoubusgit" target="_blank" rel="noopener noreferrer" class="project-link project-link-secondary" data-i18n="projects.viewCode">View Code</a>
+                    </div>
+                </article>
+
+                <!-- Project 2: Advanced Calculator -->
+                <article class="project-card">
+                    <div class="project-thumbnail">
+                        <img src="images/calculator.png" alt="Advanced Calculator" class="project-image">
+                    </div>
+                    <h3 data-i18n="projects.calculator.title">Advanced Calculator</h3>
+                    <p class="project-description" data-i18n="projects.calculator.description">
+                        A feature-rich calculator with both standard and scientific modes. Includes trigonometric 
+                        functions, logarithms, and complex expression evaluation. Features keyboard support, 
+                        calculation history, and comprehensive error handling for a smooth user experience. 
+                        Built with vanilla JavaScript and a modern glassmorphism UI design.
+                    </p>
+                    <div class="tech-badges">
+                        <span class="tech-badge">HTML</span>
+                        <span class="tech-badge">CSS</span>
+                        <span class="tech-badge">JS</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="../../programs/calculator/index.html" target="_blank" rel="noopener noreferrer" class="project-link project-link-primary">Live Demo</a>
+                        <a href="https://github.com/sfoubusgit" target="_blank" rel="noopener noreferrer" class="project-link project-link-secondary">View Code</a>
+                    </div>
+                </article>
+
+                <!-- Project 3: PNG→WEBP Converter -->
+                <article class="project-card">
+                    <div class="project-thumbnail">
+                        <div class="thumbnail-placeholder">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="3" width="18" height="18" rx="2"/>
+                                <circle cx="8.5" cy="8.5" r="1.5"/>
+                                <path d="M21 15l-5-5L5 21"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 data-i18n="projects.converter.title">PNG→WEBP Converter</h3>
+                    <p class="project-description" data-i18n="projects.converter.description">
+                        A desktop application for batch converting PNG and JPG images to WEBP format. Features 
+                        a user-friendly GUI with file selection, custom output naming, and progress tracking. 
+                        Handles different image modes including transparency conversion, provides error handling, 
+                        and supports batch processing. Built with Python, Tkinter, and Pillow for reliable image processing.
+                    </p>
+                    <div class="tech-badges">
+                        <span class="tech-badge">Python</span>
+                        <span class="tech-badge">Tkinter</span>
+                        <span class="tech-badge">Pillow</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://png-webp-converter-download.netlify.app/" target="_blank" rel="noopener noreferrer" class="project-link project-link-primary">Live Demo</a>
+                        <a href="https://github.com/sfoubusgit" target="_blank" rel="noopener noreferrer" class="project-link project-link-secondary">View Code</a>
+                    </div>
+                </article>
+
+                <!-- Project 4: Garmfiles Shop -->
+                <article class="project-card">
+                    <div class="project-thumbnail">
+                        <img src="images/garmfiles.png" alt="Garmfiles Shop" class="project-image">
+                    </div>
+                    <h3 data-i18n="projects.garmfiles.title">Garmfiles Shop</h3>
+                    <p class="project-description" data-i18n="projects.garmfiles.description">
+                        A modern e-commerce web application built with React and Vite. Features a responsive design 
+                        with React Router for navigation, shopping cart functionality, and product management. 
+                        Includes modern UI components with Lucide React icons and a clean, user-friendly interface 
+                        for browsing and purchasing products.
+                    </p>
+                    <div class="tech-badges">
+                        <span class="tech-badge">React</span>
+                        <span class="tech-badge">Vite</span>
+                        <span class="tech-badge">React Router</span>
+                        <span class="tech-badge">CSS</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://sfoubusgit.github.io/garmfiles/" target="_blank" rel="noopener noreferrer" class="project-link project-link-primary">Live Demo</a>
+                        <a href="https://github.com/sfoubusgit" target="_blank" rel="noopener noreferrer" class="project-link project-link-secondary">View Code</a>
+                    </div>
+                </article>
+
+                <!-- Project 5: EcoSpark -->
+                <article class="project-card">
+                    <div class="project-thumbnail">
+                        <img src="images/ecospark.png" alt="EcoSpark" class="project-image">
+                    </div>
+                    <h3 data-i18n="projects.ecospark.title">EcoSpark</h3>
+                    <p class="project-description" data-i18n="projects.ecospark.description">
+                        A sustainable e-commerce platform built with Next.js 14 and TypeScript. Features a complete 
+                        shopping experience with product catalog, shopping cart, checkout flow, and payment integration 
+                        (PayPal & Mollie). Includes blog functionality, category pages, and a modern design with Tailwind CSS. 
+                        Built with the Next.js App Router for optimal performance and SEO.
+                    </p>
+                    <div class="tech-badges">
+                        <span class="tech-badge">Next.js</span>
+                        <span class="tech-badge">TypeScript</span>
+                        <span class="tech-badge">Tailwind CSS</span>
+                        <span class="tech-badge">PayPal API</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://ecospark-shop.netlify.app" target="_blank" rel="noopener noreferrer" class="project-link project-link-primary">Live Demo</a>
+                        <a href="https://github.com/sfoubusgit" target="_blank" rel="noopener noreferrer" class="project-link project-link-secondary">View Code</a>
+                    </div>
+                </article>
+
+                <!-- Project 6: Sticky Notes -->
+                <article class="project-card">
+                    <div class="project-thumbnail">
+                        <div class="thumbnail-placeholder">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                                <polyline points="14 2 14 8 20 8"/>
+                                <line x1="16" y1="13" x2="8" y2="13"/>
+                                <line x1="16" y1="17" x2="8" y2="17"/>
+                                <polyline points="10 9 9 9 8 9"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 data-i18n="projects.stickynotes.title">Sticky Notes</h3>
+                    <p class="project-description" data-i18n="projects.stickynotes.description">
+                        A desktop application for creating and managing sticky notes on your computer. Built with 
+                        Electron for cross-platform compatibility. Features include unlimited notes, 5 color options, 
+                        drag-and-drop positioning, auto-save functionality, global keyboard shortcuts (Ctrl+Shift+N), 
+                        and system tray integration. Each note is a separate window for true desktop placement.
+                    </p>
+                    <div class="tech-badges">
+                        <span class="tech-badge">Electron</span>
+                        <span class="tech-badge">JavaScript</span>
+                        <span class="tech-badge">HTML/CSS</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://stickynotes-download.netlify.app/" target="_blank" rel="noopener noreferrer" class="project-link project-link-primary">Live Demo</a>
+                        <a href="https://github.com/sfoubusgit" target="_blank" rel="noopener noreferrer" class="project-link project-link-secondary">View Code</a>
+                    </div>
+                </article>
+
+                <!-- Project 7: Matrix Prinzip Funnel -->
+                <article class="project-card">
+                    <div class="project-thumbnail">
+                        <img src="images/matrixprinzip.png" alt="Matrix Prinzip Funnel" class="project-image">
+                    </div>
+                    <h3 data-i18n="projects.matrixprinzip.title">Matrix Prinzip Funnel</h3>
+                    <p class="project-description" data-i18n="projects.matrixprinzip.description">
+                        A financial education landing page and sales funnel built to help people escape the "hamster wheel" 
+                        and achieve financial freedom. Features a conversion-optimized design with clear value propositions, 
+                        email capture forms, and strategic call-to-action placements. Built with modern web technologies 
+                        for fast loading and excellent user experience. Focuses on teaching systematic approaches to reducing 
+                        expenses, building savings, and creating automated financial systems.
+                    </p>
+                    <div class="tech-badges">
+                        <span class="tech-badge">HTML</span>
+                        <span class="tech-badge">CSS</span>
+                        <span class="tech-badge">JavaScript</span>
+                        <span class="tech-badge">Landing Page</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://matrixprinzip.netlify.app" target="_blank" rel="noopener noreferrer" class="project-link project-link-primary">Live Demo</a>
+                        <a href="https://github.com/sfoubusgit" target="_blank" rel="noopener noreferrer" class="project-link project-link-secondary">View Code</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="card section reveal">
+            <h2 data-i18n="skills.title">Skills & Tools</h2>
+            
+            <div class="skills-grid">
+                <div class="skills-column">
+                    <h3 data-i18n="skills.frontend">Frontend</h3>
+                    <div class="skill-chips">
+                        <span class="skill-chip">HTML5</span>
+                        <span class="skill-chip">CSS3 (Grid/Flexbox)</span>
+                        <span class="skill-chip">Vanilla JS</span>
+                        <span class="skill-chip">Responsive Design</span>
+                        <span class="skill-chip">Accessibility basics</span>
+                    </div>
+                </div>
+                
+                <div class="skills-column">
+                    <h3 data-i18n="skills.tools">Tools & Workflows</h3>
+                    <div class="skill-chips">
+                        <span class="skill-chip">Git</span>
+                        <span class="skill-chip">GitHub</span>
+                        <span class="skill-chip">VS Code</span>
+                        <span class="skill-chip">Chrome DevTools</span>
+                        <span class="skill-chip">Figma (basic)</span>
+                        <span class="skill-chip">Linux</span>
+                        <span class="skill-chip">Windows</span>
+                    </div>
+                </div>
+                
+                <div class="skills-column">
+                    <h3 data-i18n="skills.python">Python & Other</h3>
+                    <div class="skill-chips">
+                        <span class="skill-chip">Python</span>
+                        <span class="skill-chip">Tkinter</span>
+                        <span class="skill-chip">Pillow</span>
+                        <span class="skill-chip">SQL basics</span>
+                        <span class="skill-chip">SEO writing</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="card section reveal">
+            <h2 data-i18n="about.title">About me</h2>
+            
+            <div class="about-content">
+                <p data-i18n="about.para1">
+                    My journey into web development started with a background in screen design and various 
+                    professional experiences. Through vocational training and hands-on projects, I've developed 
+                    a passion for building structured, functional interfaces and practical tools.
+                </p>
+                <p data-i18n="about.para2">
+                    I enjoy the process of transforming ideas into clean, maintainable code. Whether it's 
+                    crafting responsive layouts with CSS Grid and Flexbox, implementing smooth interactions 
+                    with vanilla JavaScript, or building desktop tools with Python, I focus on clarity and 
+                    user experience.
+                </p>
+                <p data-i18n="about.para3">
+                    Currently, I'm seeking an entry-level web/IT position in or around Hamburg, ideally remote 
+                    or hybrid. I'm eager to contribute to a team while continuing to grow as a developer.
+                </p>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <span class="timeline-year">2018–2020</span>
+                    <span class="timeline-text" data-i18n="about.timeline1">Screen Design assistant (vocational school)</span>
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-year">2023</span>
+                    <span class="timeline-text" data-i18n="about.timeline2">Web design internship</span>
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-year">2024</span>
+                    <span class="timeline-text" data-i18n="about.timeline3">Built portfolio, advanced calculator and PNG→WEBP converter</span>
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-year">2024–2025</span>
+                    <span class="timeline-text" data-i18n="about.timeline4">Software development training (Python, Scrum, CyberSecurity)</span>
+                </div>
+            </div>
+
+            <div class="about-info">
+                <div class="info-item">
+                    <strong data-i18n="about.locationLabel">Location:</strong> <span data-i18n="about.location">Hamburg, Germany</span>
+                </div>
+                <div class="info-item">
+                    <strong data-i18n="about.languagesLabel">Languages:</strong> DE / EN / FR / ES
+                </div>
+                <div class="info-item">
+                    <strong data-i18n="about.licenseLabel">Driver's License:</strong> <span data-i18n="about.license">Yes</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="card section reveal">
+            <h2 data-i18n="contact.title">Let's talk</h2>
+            
+            <p class="contact-intro" data-i18n="contact.intro">
+                I'm open to junior web/IT roles, remote or in Hamburg. Feel free to reach out if you'd like 
+                to discuss opportunities or collaborate on a project.
+            </p>
+
+            <div class="contact-links">
+                <a href="mailto:sina@example.com" class="contact-link">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                        <polyline points="22,6 12,13 2,6"/>
+                    </svg>
+                    <span data-i18n="contact.email">Email</span>
+                </a>
+                <a href="https://github.com/sfoubusgit" target="_blank" rel="noopener noreferrer" class="contact-link">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                    </svg>
+                    <span data-i18n="contact.github">GitHub</span>
+                </a>
+            </div>
+
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <label for="name" class="form-label" data-i18n="contact.formName">Name</label>
+                    <input type="text" id="name" name="name" class="form-input" required>
+                </div>
+                <div class="form-group">
+                    <label for="email" class="form-label" data-i18n="contact.formEmail">E-mail</label>
+                    <input type="email" id="email" name="email" class="form-input" required>
+                </div>
+                <div class="form-group">
+                    <label for="message" class="form-label" data-i18n="contact.formMessage">Message</label>
+                    <textarea id="message" name="message" class="form-textarea" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="button button-primary" data-i18n="contact.formSubmit">Send message</button>
+                <div class="form-message" id="formMessage"></div>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p data-i18n="footer.text">© 2025 – Portfolio by Sina Foudehi — built with HTML, CSS & a bit of JS</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

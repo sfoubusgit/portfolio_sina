@@ -1,0 +1,401 @@
+🟩 EcoSpark – Systemarchitektur-Konzept
+
+Zweck: Übersicht über alle technischen Komponenten, Provider, Datenflüsse und Integrationen, die EcoSpark betreiben.
+
+1. Gesamtsicht – Architektur-Überblick
+
+Ebenen:
+
+Presentation Layer (Frontend)
+
+Storefront (Shopify Theme / WooCommerce-Theme)
+
+Responsives Webdesign (EcoSpark UI)
+
+Browser der Nutzer (Desktop & Mobile)
+
+Application Layer (Business-Logik / E-Commerce)
+
+Shopify / WooCommerce
+
+Apps & Plugins (Dropshipping, Reviews, Support, etc.)
+
+Payment Provider
+
+Authentifizierung / Konten
+
+Integration Layer (APIs / Schnittstellen)
+
+Dropshipping-Plattformen (DSers, Syncee, EPROLO, Spocket etc.)
+
+E-Mail-Marketing (Klaviyo / Mailchimp / Shopify Email)
+
+Analytics & Tracking (GA4, Meta Pixel, TikTok Pixel, Pinterest Tag)
+
+Support-System (z. B. Gorgias / Zendesk / Shopify Inbox)
+
+Data & Storage Layer
+
+Shopify-Datenbank (Produkte, Bestellungen, Kunden)
+
+Marketing-Datenbanken (E-Mail-Listen, Events, Kampagnen)
+
+Logfiles / Analytics
+
+(optional) Externes Data Warehouse
+
+Infrastructure Layer (Hosting & Netzwerk)
+
+Shopify Cloud-Infrastruktur (oder Web-Server bei WooCommerce)
+
+CDN (Content Delivery Network)
+
+DNS & Domain Provider
+
+SSL/TLS-Zertifikate
+
+Backup & Security
+
+2. Infrastruktur / Hosting / Netzwerk
+2.1 Domain & DNS
+
+Domain-Provider: z. B. Namecheap, IONOS, Cloudflare etc.
+
+Domain: ecospark.de (Beispiel)
+
+DNS-Einträge:
+
+A / CNAME → Shopify oder Webserver (bei WooCommerce)
+
+MX → E-Mail-Provider (z. B. Google Workspace)
+
+TXT → SPF, DKIM, DMARC für sichere E-Mail-Zustellung
+
+CNAME → Tracking/Tools (Verifizierung, z. B. für GA4, Meta)
+
+2.2 Hosting-Variante A – Shopify (empfohlen)
+
+Frontend & Backend werden vollständig bei Shopify gehostet
+
+Vorteile:
+
+Skalierbarkeit
+
+Wartung & Sicherheit durch Provider
+
+Kein eigener Server nötig
+
+CDN: Shopify nutzt ein globales CDN → schnelle Auslieferung
+
+2.3 Hosting-Variante B – WooCommerce (Alternative)
+
+Webhoster (z. B. All-Inkl, Hetzner, Host Europe)
+
+Servertyp: Managed WordPress Hosting
+
+Komponenten:
+
+Apache/Nginx + PHP + MySQL
+
+WordPress + WooCommerce
+
+Caching (Redis, Varnish, Plugin)
+
+Mehr Verantwortung: Updates, Sicherheit, Backups selbst managen
+
+2.4 SSL/TLS
+
+Jede Seite nur via HTTPS
+
+Shopify: SSL inklusive
+
+WooCommerce: Let’s Encrypt oder Zertifikat beim Hoster
+
+3. E-Commerce Application Layer
+3.1 Kernsystem
+
+Shop-Engine: Shopify Basic Plan
+
+Multi-Language optional (DE/EN)
+
+Wichtige Shopify-Objekte:
+
+Products
+
+Collections (Kategorien)
+
+Customers
+
+Orders
+
+Discount Codes
+
+3.2 Theme / Frontend
+
+Custom Theme oder angepasstes Standardtheme („Dawn“)
+
+Implementiert:
+
+EcoSpark Designsystem (Farben, Typo, Layout)
+
+Produktkacheln, Badges, Nachhaltigkeits-Icons
+
+Kategorien: Zero Waste, Eco Gadgets, Grow & Green, Upcycling, Gifts
+
+Blog (SEO Content)
+
+4. Integrationen / Apps / Plugins
+4.1 Dropshipping & Supplier
+
+Ziel: Automatisierter Fulfillment-Prozess.
+
+DSers (AliExpress Integration)
+
+Bestellungen → automatisierter Import zu AliExpress
+
+Trackingnummern → zurück nach Shopify
+
+Syncee / Spocket / EPROLO
+
+Produktimport für nachhaltige Produkte
+
+Daten-Sync (Preis, Lager, Bilder)
+
+Order Routing an jeweilige Lieferanten
+
+Datenfluss (vereinfacht):
+
+Kunde bestellt → Shop erfasst Order → App (DSers/Syncee) erkennt Order → sendet an Supplier → Supplier versendet → Tracking → App → Shopify → Kunde.
+
+4.2 Payment Provider
+
+Shopify Payments (Kreditkarte, Klarna etc., falls verfügbar)
+
+PayPal
+
+optional: Klarna, Sofort, Apple Pay
+
+Datenfluss:
+Frontend Checkout → Router → Payment Gateway → Bestätigung → Order Status Update in Shopify.
+
+4.3 E-Mail & Marketing
+
+E-Mail Provider: z. B. Klaviyo oder Shopify Email / Mailchimp
+
+Zweck:
+
+Welcome Flow
+
+Abandoned Cart
+
+Post-Purchase Mails
+
+Newsletter
+
+Integration:
+
+App in Shopify installiert
+
+Bidirektionale Synchronisierung von:
+
+Kunden
+
+Events (Viewed product, Added to cart, Placed order)
+
+4.4 Analytics & Tracking
+
+Google Analytics 4 (GA4)
+
+Meta Pixel (Facebook/Instagram)
+
+TikTok Pixel
+
+Pinterest Tag
+
+Implementierung:
+
+Skripte im Theme / via Apps
+
+Events: Page View, View Content, Add to Cart, Initiate Checkout, Purchase
+
+Option: Google Tag Manager dazwischenschalten.
+
+4.5 Customer Support & Chat
+
+Shopify Inbox oder
+
+Gorgias / Zendesk Integration
+
+Funktionen:
+
+Ticketsystem
+
+E-Mail-Integration
+
+Chat-Widget im Shop
+
+Automatisierte Antworten (Macros, AI-Snippets)
+
+4.6 Reviews & Social Proof
+
+Bewertungssystem (z. B. Judge.me, Loox)
+
+Sammlung von:
+
+Sternebewertungen
+
+Textfeedback
+
+Produktbildern
+
+Anzeige in Produktseiten & Startseite
+
+5. Datenmodell & Speicherorte
+5.1 Daten in Shopify
+
+Produktdaten:
+Titel, Preis, SKU, Bilder, Kategorie, Nachhaltigkeits-Labels, Tags
+
+Kundendaten:
+Name, E-Mail, Adresse, Bestellhistorie
+
+Bestellungen:
+Produkt, Menge, Datum, Status, Payment Info (tokenisiert, nicht voll sichtbar)
+
+5.2 Daten in Drittsystemen
+
+E-Mail-Tool: E-Mail-Adressen, Segmentierung, Engagement-Daten
+
+Analytics: anonyme oder pseudonyme Nutzerdaten
+
+Dropshipping-Tools: Bestell- & Lieferdaten (ohne Zahlungsdaten)
+
+5.3 Backups
+
+Shopify: automatische Backups (nicht direkt user-gesteuert)
+
+extra App möglich: z. B. Rewind (Backup-App)
+
+WooCommerce (falls genutzt): automatisierte DB- & Filesystem-Backups beim Hoster
+
+6. Security & Datenschutz
+6.1 Security
+
+HTTPS überall
+
+2FA (Two-Factor Authentication) für Admin-Accounts
+
+Rollen & Rechte:
+
+Admin (du)
+
+Staff (Support, Content, Marketing)
+
+Keine Klartext-Passwörter
+
+Zugriffsprotokolle über Shopify / Hoster
+
+6.2 Datenschutz (DSGVO)
+
+Cookie-Banner (Consent Management Tool)
+
+Auftragsverarbeitungsverträge (AVV) mit:
+
+E-Mail-Provider
+
+Analytics-Anbietern
+
+Support-Tools
+
+Datenschutzerklärung mit:
+
+Auflistung aller Tools
+
+Zweck, Rechtsgrundlage, Speicherfristen
+
+7. Environments & Deployment
+7.1 Shopify
+
+Live-Store: produktiv
+
+Theme-Preview / Duplicate Theme: Staging-Ersatz
+
+Änderungen erst im Duplikat testen, dann live schalten
+
+7.2 WooCommerce (falls genutzt)
+
+Staging-Umgebung: Kopie des Live-Systems
+
+Updates & Plugins erst dort testen
+
+Deployment per Backup/Restore oder Migrations-Tool
+
+8. Monitoring & Observability
+8.1 Verfügbarkeit & Performance
+
+Uptime Monitoring (z. B. UptimeRobot)
+
+PageSpeed Checks (PageSpeed Insights, GTmetrix)
+
+8.2 Business Monitoring
+
+Shopify Dashboard (Umsatz, Conversion, AOV)
+
+GA4 → Traffic, Quellen, Verhalten
+
+Ads-Dashboards → ROAS, CPC
+
+8.3 Error Monitoring
+
+404-Tracking (GA4)
+
+Checkout-Abbrüche
+
+Payment Error Rates
+
+9. Typische Datenflüsse (End-to-End)
+9.1 Kauf über TikTok
+
+Nutzer sieht TikTok-Video von EcoSpark
+
+Klick auf Link in Bio → EcoSpark Shopify-Store
+
+Landet auf Produktseite
+
+Add to Cart, Checkout
+
+Zahlung via PayPal / Shopify Payments
+
+Order kreiert in Shopify
+
+Dropshipping-App erkennt Order → sendet an Supplier
+
+Supplier versendet → Tracking geht an App → Shopify → E-Mail an Kunden
+
+Post-Purchase E-Mail-Flow startet
+
+Review-Anfrage nach X Tagen
+
+9.2 Blog-SEO zu Produkt
+
+Nutzer googelt „Zero Waste Starter Set unter 20 €“
+
+Findet EcoSpark-Blogartikel
+
+Klickt internen Produktlink
+
+Von Info → Produktseite → Kauf
+
+Tracking via GA4 & Pixel → Daten für Marketing-Optimierung
+
+10. Erweiterbarkeit & Zukunft
+
+Die Architektur ist so ausgelegt, dass du später leicht ergänzen kannst:
+
+Eigenes Lager (wenn du Besteller selbst lagerst)
+
+Eigenmarken-Produkte (mit eigenem ERP/ Warenwirtschaft)
+
+B2B-Portal (eigene Subdomain)
+
+Externes Data Warehouse (z. B. für tiefe Analytics)

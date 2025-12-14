@@ -1,0 +1,196 @@
+🟩 2. DIE 25 STARTPRODUKTE (ALLE AUSGEARBEITET)
+
+Wir decken damit alle EcoSpark Kategorien ab.
+
+🌱 A) Zero Waste Essentials (7 Produkte)
+1. Bienenwachstücher Set (3 Größen)
+
+Kategorie: Zero Waste Essentials
+Preis: 12,90 €
+Slug: bienenwachstuecher-set
+Badges: ["Zero Waste", "Reusable"]
+Kurze Beschreibung:
+Ein plastikfreies Küchen-Must-Have: ersetzt Alu- & Frischhaltefolie.
+Lange Beschreibung:
+Dieses 3er-Set aus Bienenwachstüchern bietet eine nachhaltige Alternative zu Einwegfolien. Perfekt zum Abdecken, Einwickeln und Aufbewahren. Atmungsaktiv, langlebig und leicht zu reinigen.
+Nachhaltigkeit:
+100 % Baumwolle, regionales Bienenwachs, mehrfach wiederverwendbar.
+Tags: wachstücher, zero waste küche
+SEO Titel: Bienenwachstücher Set – Nachhaltige Alternative
+SEO Description: Plastikalternative für deine Küche: wiederverwendbare Bienenwachstücher im 3er-Set.
+
+2. Edelstahl-Strohhalme (6er Set)
+
+Preis: 8,90 €
+Slug: edelstahl-strohhalme-set
+Badges: ["Zero Waste"]
+Beschreibung Kurz:
+Wiederverwendbare Strohhalme aus Edelstahl – inkl. Reinigungsbürste.
+Lange Beschreibung:
+Robust, elegant und nachhaltig. Ideal für Smoothies, Cocktails oder deinen täglichen Kaffee.
+Nachhaltigkeit:
+Ersetzt hunderte Einwegstrohhalme.
+SEO: Edelstahl Strohhalme Set – Wiederverwendbar & Plastikfrei.
+
+3. Bambus-Besteck To-Go Set
+
+Preis: 10,90 €
+Badges: ["Zero Waste", "Travel"]
+Beschreibung: Komplettes Reisebesteck aus Bambus im Stoffetui.
+
+4. Reusable Makeup Pads (10 Stück)
+
+Preis: 9,90 €
+Badges: ["Zero Waste", "Vegan"]
+
+5. Kompostierbare Schwämme (5er Pack)
+
+Preis: 7,90 €
+Badges: ["Compostable", "Zero Waste"]
+
+6. Mini-Seifenbox aus Bambus
+
+Preis: 8,50 €
+Badges: ["Natural Material"]
+
+7. Baumwollbeutel Set (3 Größen)
+
+Preis: 6,90 €
+Badges: ["Reusable", "Zero Waste"]
+
+💡 Perfekt für SEO + Social + Geringe Retouren
+
+Diese Produkte sind extrem pflegeleicht und langlebig → perfekt fürs Startsortiment.
+
+🔆 B) Eco Gadgets (6 Produkte)
+8. Solar-Blume „SunBloom Mini“
+
+Preis: 9,90 €
+Slug: solar-blume-sunbloom
+Badges: ["Solar", "Eco Gadget"]
+Beschreibung Kurz: Wackelt fröhlich durch Sonnenenergie – beliebter Deko-Mini.
+Nachhaltigkeit: 100 % solarbetrieben.
+
+9. Mini Solar-LED Würfel „EcoGlow“
+
+Preis: 12,90 €
+Badges: ["Solar"]
+Beschreibung: Kleine Deko-Leuchte, lädt sich tagsüber auf.
+
+10. Handkurbel-Licht „CrankLite Pocket“
+
+Preis: 14,90 €
+Badges: ["Energy-Free"]
+
+11. Holz-Handyhalter „OakStand Mini“
+
+Preis: 8,90 €
+Badges: ["Wood", "Minimal"]
+
+12. Kabelhalter aus Bambus
+
+Preis: 7,90 €
+Badges: ["Natural Material"]
+
+13. Kork-Desk Organizer Mini
+
+Preis: 11,90 €
+Badges: ["Recycled"]
+
+🌿 C) Grow & Green (5 Produkte)
+14. Seedbomb Trio Pack
+
+Preis: 6,90 €
+Badges: ["Grow", "Bee-Friendly"]
+
+15. Mini Bonsai Starter Kit
+
+Preis: 13,90 €
+Badges: ["Grow Kit"]
+
+16. Pflanzbarer Bleistift (5er Set)
+
+Preis: 8,90 €
+Badges: ["Plantable", "Zero Waste"]
+
+17. Kräuter Micro-Grow Kit (Basilikum)
+
+Preis: 9,90 €
+Badges: ["Grow"]
+
+18. Wilde Blumen Starter Cup
+
+Preis: 7,90 €
+Badges: ["Grow", "Wildflowers"]
+
+♻️ D) Upcycling & Recycled (4 Produkte)
+19. Geldbörse aus recyceltem Reifen „RoadCycle Wallet“
+
+Preis: 19,90 €
+Badges: ["Recycled", "Upcycled"]
+
+20. Schlüsselanhänger aus Ozeanplastik
+
+Preis: 6,50 €
+Badges: ["Ocean Plastic"]
+
+21. Recyceltes PET-Mäppchen
+
+Preis: 9,50 €
+Badges: ["Recycled PET"]
+
+22. Mousepad aus recyceltem Gummi
+
+Preis: 8,50 €
+Badges: ["Recycled"]
+
+🎁 E) Eco Gifts (3 Produkte)
+23. Zero Waste Starter Gift Set
+
+Preis: 14,90 €
+Badges: ["Gift", "Zero Waste"]
+
+24. Grow & Glow Gift Box
+
+Preis: 16,90 €
+Badges: ["Gift", "Grow"]
+
+25. Natural Aroma Stone – Mini Duftstein
+
+Preis: 9,90 €
+Badges: ["Natural"]
+
+🟦 3. KATEGORIE-ZUORDNUNG
+
+zero-waste: Produkte 1–7
+
+eco-gadgets: Produkte 8–13
+
+grow-green: Produkte 14–18
+
+upcycling: Produkte 19–22
+
+gifts: Produkte 23–25
+
+🟩 4. EMPFEHLUNGEN („Passt dazu“)
+
+Ich kann dir eine Matching-Logik geben oder wir ordnen jedes Produkt einzeln zu.
+
+Beispiel:
+
+Solar-Gadgets ↔ Gifts
+
+Zero Waste ↔ Gifts
+
+Grow ↔ Gifts
+
+Upcycling ↔ Zero Waste (ähnliche Zielgruppe)
+
+Wenn du willst, mache ich dir:
+👉 eine komplette Related Products Map für alle 25 Items.
+
+🟦 5. SEO-TITEL & META DESCRIPTIONS
+
+Wenn du willst, schreibe ich dir:
+👉 für alle 25 Produkte
+fertige SEO-Titel, Meta-Descriptions und Keyword-Empfehlungen.
