@@ -27,12 +27,10 @@ const translations = {
             liveDemo: 'Live Demo',
             viewCode: 'View Code',
             portfolio: { title: 'Portfolio Website', description: 'A minimalist, responsive portfolio showcasing my work with a clean grid-based layout. Built with vanilla JavaScript for smooth scrolling, intersection observer animations, and a fully responsive design that works seamlessly across all devices. Features a dark theme with modern card-based sections and smooth reveal animations.' },
-            calculator: { title: 'Advanced Calculator', description: 'A feature-rich calculator with both standard and scientific modes. Includes trigonometric functions, logarithms, and complex expression evaluation. Features keyboard support, calculation history, and comprehensive error handling for a smooth user experience. Built with vanilla JavaScript and a modern glassmorphism UI design.' },
-            converter: { title: 'PNG→WEBP Converter', description: 'A desktop application for batch converting PNG and JPG images to WEBP format. Features a user-friendly GUI with file selection, custom output naming, and progress tracking. Handles different image modes including transparency conversion, provides error handling, and supports batch processing. Built with Python, Tkinter, and Pillow for reliable image processing.' },
             garmfiles: { title: 'Garmfiles Shop', description: 'A modern e-commerce web application built with React and Vite. Features a responsive design with React Router for navigation, shopping cart functionality, and product management. Includes modern UI components with Lucide React icons and a clean, user-friendly interface for browsing and purchasing products.' },
             ecospark: { title: 'EcoSpark', description: 'A sustainable e-commerce platform built with Next.js 14 and TypeScript. Features a complete shopping experience with product catalog, shopping cart, checkout flow, and payment integration (PayPal & Mollie). Includes blog functionality, category pages, and a modern design with Tailwind CSS. Built with the Next.js App Router for optimal performance and SEO.' },
-            stickynotes: { title: 'Sticky Notes', description: 'A desktop application for creating and managing sticky notes on your computer. Built with Electron for cross-platform compatibility. Features include unlimited notes, 5 color options, drag-and-drop positioning, auto-save functionality, global keyboard shortcuts (Ctrl+Shift+N), and system tray integration. Each note is a separate window for true desktop placement.' },
-            matrixprinzip: { title: 'Matrix Prinzip Funnel', description: 'A financial education landing page and sales funnel built to help people escape the "hamster wheel" and achieve financial freedom. Features a conversion-optimized design with clear value propositions, email capture forms, and strategic call-to-action placements. Built with modern web technologies for fast loading and excellent user experience. Focuses on teaching systematic approaches to reducing expenses, building savings, and creating automated financial systems.' }
+            matrixprinzip: { title: 'Matrix Prinzip Funnel', description: 'A financial education landing page and sales funnel built to help people escape the "hamster wheel" and achieve financial freedom. Features a conversion-optimized design with clear value propositions, email capture forms, and strategic call-to-action placements. Built with modern web technologies for fast loading and excellent user experience. Focuses on teaching systematic approaches to reducing expenses, building savings, and creating automated financial systems.' },
+            handyarchive: { title: 'Handy Programs Archive', description: 'A carefully curated collection of handy programs and digital tools that solve real problems without bloat, ads, or unnecessary complexity. Each tool has been tested, approved, and packaged for convenience. Features a minimalist design with a focus on functionality. The archive includes desktop applications like sticky notes and batch image converters, all free and open source. A digital garden of useful tools that grows organically.' }
         },
         skills: { title: 'Skills & Tools', frontend: 'Frontend', tools: 'Tools & Workflows', python: 'Python & Other' },
         about: {
@@ -74,12 +72,10 @@ const translations = {
             liveDemo: 'Live Demo',
             viewCode: 'Code ansehen',
             portfolio: { title: 'Portfolio-Website', description: 'Ein minimalistisches, responsives Portfolio, das meine Arbeit mit einem sauberen, rasterbasierten Layout präsentiert. Erstellt mit Vanilla JavaScript für sanftes Scrollen, Intersection Observer-Animationen und ein vollständig responsives Design, das nahtlos auf allen Geräten funktioniert. Enthält ein dunkles Theme mit modernen kartenbasierten Abschnitten und sanften Enthüllungsanimationen.' },
-            calculator: { title: 'Erweiterter Taschenrechner', description: 'Ein funktionsreicher Taschenrechner mit Standard- und wissenschaftlichen Modi. Enthält trigonometrische Funktionen, Logarithmen und komplexe Ausdrucksauswertung. Bietet Tastaturunterstützung, Berechnungsverlauf und umfassende Fehlerbehandlung für ein reibungsloses Benutzererlebnis. Erstellt mit Vanilla JavaScript und einem modernen Glassmorphismus-UI-Design.' },
-            converter: { title: 'PNG→WEBP Konverter', description: 'Eine Desktop-Anwendung zur Batch-Konvertierung von PNG- und JPG-Bildern in das WEBP-Format. Bietet eine benutzerfreundliche GUI mit Dateiauswahl, benutzerdefinierter Ausgabennamensgebung und Fortschrittsverfolgung. Verarbeitet verschiedene Bildmodi einschließlich Transparenzkonvertierung, bietet Fehlerbehandlung und unterstützt Batch-Verarbeitung. Erstellt mit Python, Tkinter und Pillow für zuverlässige Bildverarbeitung.' },
             garmfiles: { title: 'Garmfiles Shop', description: 'Eine moderne E-Commerce-Webanwendung, die mit React und Vite erstellt wurde. Bietet ein responsives Design mit React Router für Navigation, Warenkorbfunktionalität und Produktverwaltung. Enthält moderne UI-Komponenten mit Lucide React-Icons und eine saubere, benutzerfreundliche Oberfläche zum Durchsuchen und Kaufen von Produkten.' },
             ecospark: { title: 'EcoSpark', description: 'Eine nachhaltige E-Commerce-Plattform, die mit Next.js 14 und TypeScript erstellt wurde. Bietet eine vollständige Shopping-Erfahrung mit Produktkatalog, Warenkorb, Checkout-Flow und Zahlungsintegration (PayPal & Mollie). Enthält Blog-Funktionalität, Kategorieseiten und ein modernes Design mit Tailwind CSS. Erstellt mit dem Next.js App Router für optimale Leistung und SEO.' },
-            stickynotes: { title: 'Notizzettel', description: 'Eine Desktop-Anwendung zum Erstellen und Verwalten von Notizzetteln auf Ihrem Computer. Erstellt mit Electron für plattformübergreifende Kompatibilität. Funktionen umfassen unbegrenzte Notizen, 5 Farboptionen, Drag-and-Drop-Positionierung, Auto-Save-Funktionalität, globale Tastenkürzel (Strg+Umschalt+N) und System-Tray-Integration. Jede Notiz ist ein separates Fenster für echte Desktop-Platzierung.' },
-            matrixprinzip: { title: 'Matrix Prinzip Funnel', description: 'Eine Finanzbildungs-Landingpage und Verkaufsfunnel, die Menschen dabei hilft, aus dem "Hamsterrad" auszubrechen und finanzielle Freiheit zu erreichen. Bietet ein konversionsoptimiertes Design mit klaren Wertversprechen, E-Mail-Erfassungsformularen und strategisch platzierten Call-to-Action-Elementen. Erstellt mit modernen Webtechnologien für schnelles Laden und hervorragende Benutzererfahrung. Fokussiert sich darauf, systematische Ansätze zur Reduzierung von Ausgaben, zum Aufbau von Ersparnissen und zur Schaffung automatisierter Finanzsysteme zu vermitteln.' }
+            matrixprinzip: { title: 'Matrix Prinzip Funnel', description: 'Eine Finanzbildungs-Landingpage und Verkaufsfunnel, die Menschen dabei hilft, aus dem "Hamsterrad" auszubrechen und finanzielle Freiheit zu erreichen. Bietet ein konversionsoptimiertes Design mit klaren Wertversprechen, E-Mail-Erfassungsformularen und strategisch platzierten Call-to-Action-Elementen. Erstellt mit modernen Webtechnologien für schnelles Laden und hervorragende Benutzererfahrung. Fokussiert sich darauf, systematische Ansätze zur Reduzierung von Ausgaben, zum Aufbau von Ersparnissen und zur Schaffung automatisierter Finanzsysteme zu vermitteln.' },
+            handyarchive: { title: 'Handy Programs Archive', description: 'Eine sorgfältig kuratierte Sammlung von praktischen Programmen und digitalen Tools, die echte Probleme lösen, ohne Ballast, Werbung oder unnötige Komplexität. Jedes Tool wurde getestet, genehmigt und für den Komfort verpackt. Bietet ein minimalistisches Design mit Fokus auf Funktionalität. Das Archiv enthält Desktop-Anwendungen wie Notizzettel und Batch-Bildkonverter, alle kostenlos und Open Source. Ein digitaler Garten nützlicher Tools, der organisch wächst.' }
         },
         skills: { title: 'Fähigkeiten & Tools', frontend: 'Frontend', tools: 'Tools & Workflows', python: 'Python & Sonstiges' },
         about: {
@@ -163,7 +159,52 @@ if (langToggleBtn) {
 // Apply translations on page load
 document.addEventListener('DOMContentLoaded', () => {
     applyTranslations(currentLang);
+    initTheme();
 });
+
+// ============================================
+// THEME SYSTEM (Light/Dark Mode Toggle)
+// ============================================
+
+// Get current theme from localStorage or default to dark
+// Dark mode is the default theme
+let currentTheme = localStorage.getItem('portfolioTheme') || 'dark';
+
+// Initialize theme immediately (before DOMContentLoaded to prevent FOUC)
+// This ensures dark mode is active by default
+if (!localStorage.getItem('portfolioTheme')) {
+    document.documentElement.setAttribute('data-theme', 'dark');
+}
+
+// Initialize theme on page load
+function initTheme() {
+    // Get theme from localStorage or use dark as default
+    const savedTheme = localStorage.getItem('portfolioTheme');
+    currentTheme = savedTheme || 'dark';
+    document.documentElement.setAttribute('data-theme', currentTheme);
+    updateThemeIcon();
+}
+
+// Toggle theme function
+function toggleTheme() {
+    currentTheme = currentTheme === 'dark' ? 'light' : 'dark';
+    document.documentElement.setAttribute('data-theme', currentTheme);
+    localStorage.setItem('portfolioTheme', currentTheme);
+    updateThemeIcon();
+}
+
+// Update theme icon visibility
+function updateThemeIcon() {
+    // Icons are handled by CSS, but we can add any additional logic here if needed
+}
+
+// Theme toggle button event listener
+const themeToggleBtn = document.getElementById('themeToggle');
+if (themeToggleBtn) {
+    themeToggleBtn.addEventListener('click', () => {
+        toggleTheme();
+    });
+}
 
 // Mobile Navigation Toggle
 const menuToggle = document.getElementById('menuToggle');
