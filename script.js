@@ -156,11 +156,7 @@ if (langToggleBtn) {
     });
 }
 
-// Apply translations on page load
-document.addEventListener('DOMContentLoaded', () => {
-    applyTranslations(currentLang);
-    initTheme();
-});
+// Translations are now applied above (either immediately or on DOMContentLoaded)
 
 // ============================================
 // THEME SYSTEM (Light/Dark Mode Toggle)
@@ -183,6 +179,18 @@ function initTheme() {
     currentTheme = savedTheme || 'dark';
     document.documentElement.setAttribute('data-theme', currentTheme);
     updateThemeIcon();
+}
+
+// Apply translations immediately if DOM is ready, otherwise wait
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', () => {
+        initTheme();
+        applyTranslations(currentLang);
+    });
+} else {
+    // DOM is already ready
+    initTheme();
+    applyTranslations(currentLang);
 }
 
 // Toggle theme function
